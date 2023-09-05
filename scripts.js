@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
-const authcode = urlParams.get('test');
+const authcode = urlParams.get('auth_code');
 console.log(authcode);
 document.getElementById('code').value = authcode;
 
