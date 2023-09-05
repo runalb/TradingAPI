@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>FYERS API - RunalB</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://assets.fyers.in/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="bg-primary">
+    <section class="container login-form" id="mobile-number-form">
+        <div class="banner-container" id="mob-banner">
+        </div>
+        <div class="row mt-6">
+            <div class="col" style="text-align: center;margin: 2%;">
+                <img src="https://assets.fyers.in/images/logo.svg" alt="FYERS" width="125" />
+            </div>
+        </div>
+        <div id="container" class="row">
+            <div id="pogon" class="top left division"></div>
+            <div id="pogon" class="bottom right division1"></div>
+            <div class="col-lg-4 col-md-6 col-lg-4 mx-auto bg-white shadow-sm p-4 ">
+                <h4>Your Auth Code</h4>
+                <p>You may use a one-time-password or TOTP to sign in based on your preferences set on My Account.
+                </p>
+                <div class="row mt-4 mx-auto mb-no-placeholder-position ">
+
+
+                    <input type="text" id="code" name="fy_client_id" width="100%"
+                        class="form-control text-uppercase mt-md-3 validate" placeholder="Code" autocomplete="on">
+
+                    <button class="btn btn-primary btn-block mt-4" onclick="copyText()">Copy</button>
+
+                    <!-- <label alt="Client ID" for="fy_client_id" id="placeholder">Code</label> -->
+                </div>
+                <!-- <a class="d-block mt-4" href="#" id="login_client_id"> Login with client ID </a> -->
+                <!-- <div class="mt-2">Don't have an account? <a href="#" class="registerNow" taget="_blank">Register now</a> -->
+            </div>
+
+
+        </div>
+        </div>
+        <div class="row agreement">
+            <div class="col-lg-4 col-md-6 mx-auto mt-3">
+                <p class="text-body text-center">This Project is Developed & Maintained by
+                    <br>
+                    <a href="https://runalb.com/?source=FyersAPI" target="_blank" class="text-body"><u>Runal Banarse -
+                            runalb.com</u></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container login-form" id="not-connected-form" style="display: none;">
+        <div class="row mt-6">
+            <div class="col" style="text-align: center;margin: 2%;">
+                <img src="https://assets.fyers.in/images/logo.svg" alt="FYERS" width="125" />
+            </div>
+        </div>
+        <div id="container" class="row">
+            <div id="pogon" class="top left division"></div>
+            <div id="pogon" class="bottom right division1"></div>
+            <div class="col-lg-4 col-md-6 mx-auto bg-white shadow-sm p-4">
+                <div class="row mb-4">
+                    <div class="col" style="text-align: center;margin: 2%;">
+                        <img src="https://assets.fyers.in/images/cg-offline.svg" alt="FYERS" width="125" />
+                    </div>
+                </div>
+                <form id="offlineForm">
+                    <h4>You are offline!</h4>
+                    <div>Please check your internet connection. Trying again in <u><a href="#"><span
+                                    id="timer0"></span></a></u> seconds.
+                    </div>
+                    <button id="offlineSubmit" type="submit" class="btn btn-primary btn-block mt-4">Try
+                        Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="row agreement">
+            <div class="col-lg-4 col-md-6 mx-auto mt-3">
+                <div class="col-lg-4 col-md-6 mx-auto mt-3">
+                    <p class="text-body text-center">This Project is Developed & Maintained by
+                        <br>
+                        <a href="https://runalb.com/?source=FyersAPI" target="_blank" class="text-body"><u>Runal Banarse
+                                - runalb.com</u></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container login-form" id="server-response-page">
+        <div class="banner-container" id="server-banner">
+
+        </div>
+        <div class="row mt-6">
+            <div class="col" style="text-align: center;margin: 2%;">
+                <img src="https://assets.fyers.in/images/logo.svg" alt="FYERS" width="125" />
+            </div>
+        </div>
+        <div id="container" class="row">
+            <div id="pogon" class="top left division"></div>
+            <div id="pogon" class="bottom right division1"></div>
+            <div class="col-lg-4 col-md-6 mx-auto bg-white shadow-sm p-4">
+                <div class="text-center mb-4">
+                    <img src="https://assets.fyers.in/images/cg-server-offline.svg" alt="server offline" width="125" />
+                </div>
+                <form id="serverNoResponseForm">
+                    <h4>Server doesn’t respond!</h4>
+                    <div>It may be a temporal glitch.
+                    </div>
+                    <button id="serverNoResSubmit" type="submit" class="btn btn-primary btn-block mt-4">Try
+                        Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="row agreement">
+            <div class="col-lg-4 col-md-6 mx-auto mt-3">
+                <div class="col-lg-4 col-md-6 mx-auto mt-3">
+                    <p class="text-body text-center">This Project is Developed & Maintained by
+                        <br>
+                        <a href="https://runalb.com/?source=FyersAPI" target="_blank" class="text-body"><u>Runal Banarse
+                                - runalb.com</u></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
