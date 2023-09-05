@@ -35,7 +35,7 @@ body {
 }
 .copy-text button {
 	padding: 10px;
-	background: #5784f5;
+	background: #436AF5;
 	color: #fff;
 	font-size: 18px;
 	border: none;
@@ -52,7 +52,7 @@ body {
 	position: absolute;
 	top: -45px;
 	right: 0px;
-	background: #5c81dc;
+	background: #436AF5;
 	padding: 8px 10px;
 	border-radius: 20px;
 	font-size: 15px;
@@ -65,7 +65,7 @@ body {
 	right: 25px;
 	width: 10px;
 	height: 10px;
-	background: #5c81dc;
+	background: #436AF5;
 	transform: rotate(45deg);
 	display: none;
 }
@@ -79,7 +79,7 @@ footer {
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	background-color: #5784f5;
+	background-color: #436AF5;
 	color: white;
 	text-align: center;
 }
