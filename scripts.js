@@ -1,3 +1,10 @@
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const authcode = urlParams.get('test');
+console.log(authcode);
+document.getElementById('code').value = authcode;
+
 let copyText = document.querySelector(".copy-text");
 copyText.querySelector("button").addEventListener("click", function () {
 	let input = copyText.querySelector("input.text");
@@ -9,12 +16,3 @@ copyText.querySelector("button").addEventListener("click", function () {
 		copyText.classList.remove("active");
 	}, 2500);
 });
-
-
-
-const queryString = window.location.href;
-console.log(queryString);
-
-const urlParams = new URLSearchParams(queryString);
-const page_type = urlParams.get('test');
-console.log(urlParams.get('test'));
